@@ -1,0 +1,21 @@
+.content-wrap{
+    display: flex;
+    padding: 20px;
+    column-gap: 20px;
+    background: #f3f4f8;
+    height: 100%;
+    font-family: system-ui;
+}
+.Dashboard-title-wrap{
+    box-shadow: 0 10px 10px -10px #0c1f2e;
+    padding: 10px 20px;
+    font-family: system-ui;
+}
+.detail-list-common-wrap{
+    box-shadow: 0 0px 18px -10px #0c1f2e;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+    width: 100%;
+}

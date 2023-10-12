@@ -1,0 +1,32 @@
+.title-head{
+    border-bottom: 1px solid #ccc;
+}
+.input-wrap{
+    display: flex;
+    column-gap: 0px;
+    padding: 20px 0;
+}
+.main-input{
+    border: none!important;
+}
+.input-field{
+    border: 2px solid #dddddd!important;
+    border-radius: 5px;
+    padding: 10px 6px;
+}
+.input-wrap label{
+    color: #132e68;
+}
+.form-btn{
+    border-radius: 50px;
+}
+.list-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+mat-error{
+    color: red !important;
+    font-size: 12px;
+
+}

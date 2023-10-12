@@ -1,0 +1,17 @@
+.title-head{
+    border-bottom: 1px solid #ccc;
+}
+.header-color
+{
+    background-color :#f3f4f8;
+}
+.list-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-main input{
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #dddddd;
+}

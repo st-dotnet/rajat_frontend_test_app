@@ -1,0 +1,35 @@
+.top-header{
+    background: #663399;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.top-header p{
+    font-family: system-ui;
+}
+.title{
+    background: #fff;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 50px 0 20px;
+}
+.side-nav{
+    /* position: fixed; */
+    box-shadow: 10px 0 10px -10px #ddd;
+    height: 79vh;
+    padding-right: 20px;
+    max-width: 215px;
+    width: 100%;
+    z-index: 1;
+}
+.body-warp{
+    display: flex;
+    position: relative;
+}
+.body-content{
+    /* position: fixed; */
+    left: 15%;
+    width: 100%;
+}

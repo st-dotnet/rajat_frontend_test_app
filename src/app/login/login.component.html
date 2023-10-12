@@ -1,0 +1,28 @@
+<div class="login-container">
+  <div class="top-header">
+    <img src="/assets/images/patient_icon_logo.png" />
+    <p>Patient System</p>
+  </div>
+  <div class="form-body">
+    <h2 class="login-heading">Login to your Account</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <!-- <label for="username">Username:</label> -->
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="Email Address"
+        />
+      </div>
+      <div>
+        <!-- <label for="password">Password:</label> -->
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Password"
+        />
+      </div>
+      <button type="submit" [disabled]="!loginForm.valid">LOGIN</button>
+    </form>
+  </div>
+</div>

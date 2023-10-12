@@ -1,0 +1,35 @@
+<div class="title-head list-main">
+  <h2>Patient Details</h2>
+  <input [(ngModel)]="searchTerm" (input)="onSearchInputChange()" placeholder="Search by First Name"/>
+</div>
+<mat-table #table [dataSource]="dataSource" >
+  <ng-container matColumnDef="firstName">
+    <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.firstName }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="lastName">
+    <mat-header-cell *matHeaderCellDef> Last Name </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.lastName }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="addressLine1">
+    <mat-header-cell *matHeaderCellDef> Address </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.addressLine1 }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <button mat-icon-button (click)="editItem(element)">
+        <img src="assets/images/edit_icon.png" />
+      </button>
+      <button mat-icon-button (click)="deleteItem(element)">
+        <img src="assets/images/close_icon.png" />
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns" class="header-color"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
